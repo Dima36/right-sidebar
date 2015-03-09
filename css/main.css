@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/** Reset default styles end **/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background: grey;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+/** General styles end **/
+.right-sidebar {
+  position: absolute;
+  width: 278px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  color: #908d8d;
+  overflow: hidden;
+  min-height: 325px;
+}
+.right-sidebar .images {
+  height: 150px;
+  min-width: 1000px;
+  position: relative;
+}
+.right-sidebar .images .item {
+  margin-left: 4px;
+  float: left;
+}
+.right-sidebar .images .item:first-child {
+  margin-left: 0;
+}
+.right-sidebar .images .item img {
+  max-height: 150px;
+  display: block;
+}
+.right-sidebar .images .view-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 175px;
+  background: #6fa8df;
+  padding: 6px 9px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 10px;
+}
+.right-sidebar .close {
+  width: 18px;
+  height: 17px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 230px;
+  cursor: pointer;
+  border: 2px solid #8a8b8a;
+  background: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRFNjIwN0E5QzY5QjExRTRBNEM5OTBFN0ZCRDEwRkU1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRFNjIwN0FBQzY5QjExRTRBNEM5OTBFN0ZCRDEwRkU1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REU2MjA3QTdDNjlCMTFFNEE0Qzk5MEU3RkJEMTBGRTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REU2MjA3QThDNjlCMTFFNEE0Qzk5MEU3RkJEMTBGRTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAACAgICAgICAgICAwICAgMEAwICAwQFBAQEBAQFBgUFBQUFBQYGBwcIBwcGCQkKCgkJDAwMDAwMDAwMDAwMDAwMAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAPABADAREAAhEBAxEB/8QAXAABAQEAAAAAAAAAAAAAAAAAAAIJAQEAAAAAAAAAAAAAAAAAAAAAEAAABgIBBAMBAAAAAAAAAAABAgMEBQYRIQcAMRIUYUITUxEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2p5DtNno7mNtCTNKVobQhkrg0SLh81KcweL1Iwjg5Ew0cmM7yHwEcf3GwX2QkrG3ZJR/HBkvXq51ij7sgsRTCjwQzhNLACUpRDI99dA5Fq8dPPIZ9cbShFcfwxv2k4FwoRs3evPMPXFy4OcoCmX+f2HHQOP6vCQ8rOS9Is6D+kzQicK2zUScs2kiUwfso2VTMYEwMXRkw1neu3Qf/9k=) center center;
+}
+.right-sidebar .body {
+  padding: 20px;
+}
+.right-sidebar .body .left {
+  float: left;
+  max-width: 132px;
+}
+.right-sidebar .body .left .tags {
+  font-size: 11px;
+  margin-top: 4px;
+  color: #2b2b2b;
+}
+.right-sidebar .body .left .text-item {
+  font-size: 13px;
+  margin-top: 18px;
+  line-height: 18px;
+}
+.right-sidebar .body .right {
+  float: right;
+  margin-top: 5px;
+  max-width: 104px;
+}
+.right-sidebar .body .right .type {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 12px;
+  line-height: 15px;
+}
+.right-sidebar .body h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+/**Sidebar end **/
